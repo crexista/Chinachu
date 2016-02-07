@@ -963,8 +963,8 @@ function getEpg() {
 			
 			var recCmd = tuner.command.replace('<channel>', channel.channel);
 			
-			// recpt1用
-			recCmd = recCmd.replace(' --b25', '').replace(' --strip', '').replace('<sid>', 'epg');
+			// px-w3pe用
+			recCmd = recCmd.replace(' --b25', '').replace(' --strip', '').replace(' --sid', '').replace(' <sid>', '');
 
 			execRecCmd(function () {
 				// 録画プロセスを生成
